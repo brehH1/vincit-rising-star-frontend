@@ -1,0 +1,70 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --card: #f0f0f0;
+    --accent: #0078ff;
+}
+
+.dark {
+    --bg: #0e0e0e;
+    --text: #dddddd;
+    --card: #1d1d1d;
+    --accent: #4ea1ff;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--card);
+    font-size: 1.3rem;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 35px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.controls div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    background: var(--card);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#statsBox {
+    white-space: pre-line;
+    font-size: 1.1rem;
+}
+
+.charts {
+    padding: 20px;
+}
