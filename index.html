@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin-analyysi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bitcoin-analyysi</h1>
-        <button id="themeToggle">Dark / Light</button>
-    </header>
 
-    <section class="controls">
+    <h1>Bitcoin-analyysi</h1>
+
+    <div class="top-bar">
+        <button id="themeToggle">Dark / Light</button>
+    </div>
+
+    <div class="inputs">
         <div>
             <label>Alku:</label>
             <input type="date" id="start">
         </div>
+
         <div>
             <label>Loppu:</label>
             <input type="date" id="end">
         </div>
+
         <button id="fetchBtn">Hae data</button>
-    </section>
+    </div>
 
-    <section class="stats">
+    <div class="card">
         <h2>Tilastot</h2>
-        <div id="statsBox"></div>
-    </section>
+        <pre id="statsBox"></pre>
+    </div>
 
-    <section class="charts">
+    <div class="chart-container">
         <h2>Hinta</h2>
         <canvas id="priceChart"></canvas>
+    </div>
 
+    <div class="chart-container">
         <h2>Volyymi</h2>
         <canvas id="volumeChart"></canvas>
-    </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
