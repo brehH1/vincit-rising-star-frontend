@@ -123,3 +123,7 @@ h1 {
         align-items: flex-start;
     }
 }
+
+body.dark input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
